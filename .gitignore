@@ -1,7 +1,7 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/node_modules
+node_modules/
 /.pnp
 .pnp.*
 .yarn/*
@@ -11,16 +11,18 @@
 !.yarn/versions
 
 # testing
-/coverage
+coverage/
 
 # next.js
+/out/
 /.next/
 /out/
 
-# production
+build/
 /build
 
 # misc
+Thumbs.db
 .DS_Store
 *.pem
 
@@ -41,12 +43,32 @@ yarn-error.log*
 next-env.d.ts
 
 # Anchor
+anchor/target/
+anchor/tests/*.so
+anchor/tests/*.json
+anchor/tests/*.log
+anchor/tests/*.bin
+anchor/tests/*.tar.*
+anchor/tests/*.zst
+anchor/tests/*.keypair.json
+anchor/tests/accounts/
+anchor/tests/ledger.lock
+anchor/tests/rocksdb/
+anchor/tests/snapshot/
+anchor/tests/validator*
+anchor/tests/tower-*
+anchor/tests/genesis*
 /anchor/.anchor
 /anchor/target/debug
+test-ledger/
 /anchor/target/deploy
 /anchor/target/release
+public/*.tmp
 /anchor/target/sbf-solana-solana
 /anchor/target/test-ledger
+*.log
+*.bak
+*.tmp
 /anchor/target/.rustc_info.json
 test-ledger
 **/*.rs.bk
