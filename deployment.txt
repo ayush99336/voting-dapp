@@ -1,0 +1,22 @@
+ solana airdrop 5 --url $ANCHOR_PROVIDER_URL
+Error: Dynamic program error: No default signer found, run "solana-keygen new -o /home/ayush99336/my-deploy-keypair.json" to create a new one
+🐸  anchor [main] solana-keygen new        
+Error: Refusing to overwrite /home/ayush99336/.config/solana/id.json without --force flag
+🐸  anchor [main] solana-keygen pubkey ~/.config/solana/id.json
+7638DV6ZkotUGzDU2W2d9iyp7LkEQLViTq6LDjMedw6p
+🐸  anchor [main] solana airdrop 10 $(solana-keygen pubkey ~/.config/solana/id.json) --url http://127.0.0.1:8899
+Requesting airdrop of 10 SOL
+
+Signature: 3EuHtwsxaJ7yrZ5NzkzZNJMFRYuabJv3QVh9yAsBqRQYaAg6tMHDhpA7Dv8aFo5iMLcDoKkSX8ZqC5jm5LqyEpd1
+
+10 SOL
+🐸  anchor [main] solana balance $(solana-keygen pubkey ~/.config/solana/id.json) --url http://127.0.0.1:8899
+10 SOL
+🐸  anchor [main] anchor deploy
+Deploying cluster: http://127.0.0.1:8899
+Upgrade authority: /home/ayush99336/.config/solana/id.json
+Deploying program "votingdapp"...
+Program path: /home/ayush99336/Desktop/BlockchainDev/School of Solana Fellowship S7/Solana Personal/voting-dapp/anchor/target/deploy/votingdapp.so...
+Program Id: 6XeRbsLezt9HC8BzvczsTZFZ4CuZtT1j4ujwWhr34JMo
+
+Signature: 3k88N4UTwcKvtetCBPNaBoB2MTuRcb4VAjWzbNe7W6BFQ7dqEbdyd3TvPcqPUXj4SM2CU39xvEyXAHmPevkWYbga
